@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color> #4CAF50
+    <color name="primaryColor">#6200EE</color>  <!-- Example: Purple -->
+    <color name="lightBackground">#F5F5F5</color> <!-- Light Gray -->
+    <color name="lightBlue">#E3F2FD</color>  <!-- Soft Blue -->
+    <color name="lightGreen">#E8F5E9</color>  <!-- Light Green -->
+    <color name="lightbrown">#880066</color>  <!-- Soft Yellow -->
+    <color name="lightWhite">#f5f2f2</color>  <!-- header color -->
+    <color name="brown">#4CAF50</color>
+
+
+
+</resources>

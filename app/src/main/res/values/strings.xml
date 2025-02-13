@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Light_on_off</string>
+    <string name="smart_home">Smart home</string>
+    <string name="bluetooth_icon">Bluetooth Icon</string>
+    <string name="logout">LogOut</string>
+    <string name="customize">⚙ Customize</string>
+    <string name="voice_control">🎤 Voice Control</string>
+    <string name="app_logo">App Logo</string>
+    <string name="netg">NetG</string>
+    <string name="voice_control_voice">Voice Control</string>
+</resources>
