@@ -170,7 +170,7 @@
             android:layout_toEndOf="@+id/goToLightControl1"
             android:background="@drawable/button_background"
             android:backgroundTint="#880066"
-            android:text="Bluetooth Connect"
+            android:text="Fire Emergency"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             app:iconTint="#4CAF50"

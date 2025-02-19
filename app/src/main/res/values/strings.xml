@@ -7,5 +7,6 @@
     <string name="voice_control">🎤 Voice Control</string>
     <string name="app_logo">App Logo</string>
     <string name="netg">NetG</string>
-    <string name="voice_control_voice">Voice Control</string>
+    <string name="fire_emergency">FIRE EMERGENCY!</string>
+    <string name="send_emergency_alert">Send Emergency Alert</string>
 </resources>

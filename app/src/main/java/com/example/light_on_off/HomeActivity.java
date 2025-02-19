@@ -13,7 +13,7 @@ import androidx.core.content.ContextCompat;
 
 public class HomeActivity extends AppCompatActivity {
 
-    Button goToLightControl, bluetoothConnectButton, logoutButton; // Added logout button
+    Button goToLightControl, bluetoothConnectButton, logoutButton;
     ImageView bluetoothIcon;
     BluetoothManager bluetoothManager;
 
@@ -25,7 +25,7 @@ public class HomeActivity extends AppCompatActivity {
         goToLightControl = findViewById(R.id.goToLightControl1);
         bluetoothConnectButton = findViewById(R.id.bluetoothConnectButton);
         bluetoothIcon = findViewById(R.id.bluetoothIcon);
-        logoutButton = findViewById(R.id.logoutButton); // Initialize Logout button
+        logoutButton = findViewById(R.id.logoutButton);
 
         bluetoothManager = BluetoothManager.getInstance();
 
@@ -35,15 +35,8 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         bluetoothConnectButton.setOnClickListener(v -> {
-            if (checkBluetoothPermissions()) {
-                if (bluetoothManager.connect()) {
-                    Toast.makeText(this, "Bluetooth Connected!", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(this, "Connection Failed", Toast.LENGTH_SHORT).show();
-                }
-            } else {
-                requestBluetoothPermissions();
-            }
+            Intent intent = new Intent(HomeActivity.this, FireEmergency.class);
+            startActivity(intent);
         });
 
         bluetoothIcon.setOnClickListener(v -> {
@@ -58,9 +51,8 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        // Set OnClickListener for the Logout button
         logoutButton.setOnClickListener(v -> {
-            finish(); // This will close the current activity
+            finish();
         });
     }
 
@@ -69,7 +61,7 @@ public class HomeActivity extends AppCompatActivity {
             return ContextCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_CONNECT) == PackageManager.PERMISSION_GRANTED &&
                     ContextCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_SCAN) == PackageManager.PERMISSION_GRANTED;
         }
-        return true; // No permissions needed below Android 12
+        return true;
     }
 
     private void requestBluetoothPermissions() {
